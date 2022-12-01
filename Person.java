@@ -32,28 +32,46 @@ public class Person {
         this.name = name;
     }
 
+    // get method
     public String getNationality() {
         return this.nationality;
     }
-
+    // set method
     public void setNationality(String nationality) {
         this.nationality = nationality;
     }
 
+    // get method
     public String getDateOfBirth() {
         return this.dateOfBirth;
     }
-
+    // set method
     public void setDateOfBirth(String dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
+    // get method
     public int getSeatNumber() {
         return this.seatNumber;
     }
 
+    // set method
     public void setSeatNumber(int seatNumber) {
         this.seatNumber = seatNumber;
+    }
+
+    //create function
+    public boolean applyPassport() {
+
+        // random number is between 0 - 1
+        int number = (int) (Math.random() * 2);
+        return number == 1;
+    }
+
+    public void chooseSeat() {
+        // random number is between 1 - 11
+        seatNumber = (int) (Math.random() * 11 + 1);
+        
     }
 
 
