@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Person {
 
     private String name;
@@ -12,6 +14,7 @@ public class Person {
         this.nationality = nationality;
         this.dateOfBirth = dateOfBirth;
         this.seatNumber = seatNumber;
+        this.passport = new String[3];
     }
 
     //copy constructor
@@ -59,6 +62,18 @@ public class Person {
     public void setSeatNumber(int seatNumber) {
         this.seatNumber = seatNumber;
     }
+
+    // get method
+    public String[] getPassport() {
+        return Arrays.copyOf(passport, passport.length);
+    }
+
+    // set method
+    public void setPassport() {
+        passport = new String[] {name, nationality, dateOfBirth};
+    }
+
+    
 
     //create function
     public boolean applyPassport() {
