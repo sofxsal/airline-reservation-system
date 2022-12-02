@@ -23,6 +23,7 @@ public class Person {
         this.nationality = source.nationality;
         this.dateOfBirth = source.dateOfBirth;
         this.seatNumber = source.seatNumber;
+        this.passport = Arrays.copyOf(source.passport, source.passport.length);
     }
 
     // get method
@@ -96,9 +97,5 @@ public class Person {
         "Seat Number: " + seatNumber + "\n" + "Passport: " +
         Arrays.toString(passport) + "\n"; 
     }
-
-
-
-
 
 }
